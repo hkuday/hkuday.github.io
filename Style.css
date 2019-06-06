@@ -112,8 +112,11 @@ body{
 }
 
 .resume-text{
-	padding-left: 1em;
+	padding-left: 0.5em;
 	color: #ef5777;
+}
+.github-text{
+	padding-right: 0.5em;
 }
 
 /* The scroll down text and such*/
