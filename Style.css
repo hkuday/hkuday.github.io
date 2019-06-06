@@ -1,0 +1,250 @@
+*{
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	background-color: #000;
+	font-family: 'Noto Sans HK', sans-serif;
+	color: #fff;
+
+}
+
+/*The container tag, any confusion? give it a background-color*/
+
+.container{
+	font-size: 1rem;
+	width: 87%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Part of the Top Navigation Bar*/
+
+.top-bar{
+	margin-top: 2rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+#logo{
+	margin-top: 2rem ;
+	font-size: 1.2em;
+}
+
+#logo a{
+	text-decoration: none;
+	color: #fff;
+}
+
+#logo a:hover{
+	color: #12CBC4;
+}
+
+.navigation{
+	display: flex;
+	margin: 2rem 0 auto auto;
+}
+
+.navigation li{
+	list-style-type: none;
+}
+
+.navigation a{
+	text-decoration: none;
+	color: #fff;
+	padding: 10px;
+}
+
+.navigation a:hover{
+	color: #12CBC4;
+}
+
+
+/* First Look and Introduction*/
+
+.intro{
+	font-size: 1.7em;
+	display: flex;
+	justify-content: space-between;
+}
+
+.qualification{
+	color: #ffdd59; 
+	font-family: 'Noto Sans HK', Bold;
+}
+
+
+.intro-text  p{
+	margin: 0.3em 0 0 0;
+}
+
+
+.intro img{
+	border-radius: 50%;
+}
+
+
+/*Profile info*/
+.profile li{
+	list-style-type: none;
+	padding-left: 1em;
+}
+
+.profile a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.profile a:hover{
+	border-bottom: 0.2rem solid #ef5777;
+}
+
+.profile{
+	display: flex;
+	font-size: 1.3em;
+	justify-content: center;
+}
+
+.resume-text{
+	color: #ef5777;
+}
+
+/* The scroll down text and such*/
+
+.scroll-down{
+	font-size: 1.5em;
+}
+
+.scroll-down i{
+	margin-left: 0.2em;
+	font-size: 1.4em;
+	transform: translateY(0.2em);
+	transition: 1s;
+}
+
+.scroll-down i:hover{
+	transform: translateY(0.4em);
+	cursor: pointer;
+}
+
+.intro-section{
+	border: 0.1 rem solid #fff;
+}
+
+/* The sections after the intro */
+
+h2{
+	color: #ffa801;
+	margin-top: 5em;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+}
+
+#my-info{
+	text-align: center;
+}
+/* About me */
+
+.aboutme-para{
+	margin-top: 1.5em;
+	font-size: 1.2em;
+	line-height: 1.7em;
+}
+
+
+/* Education */
+
+.education-part{
+	margin-top: 4em;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.education-part div{
+	margin: 0em 2em 4em 2em;
+	text-align: center;
+}
+
+.education-part img{
+	height: 9em;
+	width: 9em;
+	border-radius: 50%;
+}
+
+.school img{
+	background-color: #fff;
+}
+
+.institution-name{
+	margin: 2em 0 0 0;
+	font-size: 1.2em;
+}
+
+.batch{
+	margin-top: 0.5em;
+	color: #808e9b;
+}
+
+
+
+
+
+/* We start with new section */
+
+
+
+
+/* Set change accoridng to varying screen sizes */
+
+@media screen and (min-width: 768px){
+	.web-content{
+		font-size: 1.3rem;
+	}
+	.profile{
+		margin-top: 0;
+	}
+	.intro{
+		margin-top: 2rem; 
+	}
+	.intro img{
+		height: 25%;
+		width: 25%;
+	}
+	.scroll-down{
+		margin-top: 1.5em;
+	}
+	.education-part div{ 
+		width: 24%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.web-content{
+		font-size: 1rem;
+	}
+	.profile{
+		margin-top: 2em;
+	}
+	.intro{
+		margin-top: 4rem; 
+	}
+	.intro img{
+		height: 35%;
+		width: 35%;
+	}
+	.scroll-down{
+		margin-top: 2.5em;
+	}
+	.education-part div{ 
+		width: 50%;
+	}
+}
+}
