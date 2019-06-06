@@ -247,7 +247,10 @@ a{
 	}
 }
 
-
-
+@media screen and (max-width: 608px){
+	.intro{
+		text-align: center;
+		justify-content: center;
+	}
 
 }
