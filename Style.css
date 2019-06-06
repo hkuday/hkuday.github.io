@@ -94,7 +94,6 @@ body{
 /*Profile info*/
 .profile li{
 	list-style-type: none;
-	padding-left: 1em;
 }
 
 .profile a{
@@ -113,6 +112,7 @@ body{
 }
 
 .resume-text{
+	padding-left: 1em;
 	color: #ef5777;
 }
 
