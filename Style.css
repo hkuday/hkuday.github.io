@@ -24,7 +24,7 @@ body{
 
 /* Part of the Top Navigation Bar*/
 
-.top-bar{
+nav{
 	margin-top: 2rem;
 	display: flex;
 	justify-content: space-between;
@@ -63,6 +63,9 @@ body{
 	color: #12CBC4;
 }
 
+.web-content{
+	font-size: 1.3rem;
+}
 
 /* First Look and Introduction*/
 
@@ -70,28 +73,30 @@ body{
 	font-size: 1.7em;
 	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap-reverse;
+	margin-top: 2em;
+	font-weight: 300;
+}
+
+.intro-text  p{
+	margin: 0.3em 0 0 0;
 }
 
 .qualification{
 	color: #ffdd59; 
-	font-family: 'Noto Sans HK', Bold;
+	font-weight: 500;
 }
-
-
-.intro-text  p{
-	margin: 0.3em 0 0 0;
-
-}
-
 
 .intro img{
 	border-radius: 50%;
-
+	height: 25%;
+	width: 25%;
 }
 
 
 /*Profile info*/
+.profile{
+	margin-top: 0;
+}
 .profile li{
 	list-style-type: none;
 }
@@ -123,6 +128,7 @@ body{
 
 .scroll-down{
 	font-size: 1.5em;
+	margin-top: 1.5em;
 }
 
 .scroll-down i{
@@ -162,6 +168,7 @@ a{
 	margin-top: 1.5em;
 	font-size: 1.2em;
 	line-height: 1.7em;
+	font-weight: 300;
 }
 
 
@@ -211,25 +218,6 @@ a{
 
 /* Set change accoridng to varying screen sizes */
 
-@media screen and (min-width: 768px){
-	.web-content{
-		font-size: 1.3rem;
-	}
-	.profile{
-		margin-top: 0;
-	}
-	.intro{
-		margin-top: 2rem; 
-	}
-	.intro img{
-		height: 25%;
-		width: 25%;
-	}
-	.scroll-down{
-		margin-top: 1.5em;
-	}
-
-}
 
 @media screen and (max-width: 768px){
 	.web-content{
@@ -239,21 +227,31 @@ a{
 		margin-top: 2em;
 	}
 	.intro{
-		margin-top: 4rem; 
+		margin-top: 2em; 
 	}
 	.intro img{
 		height: 35%;
 		width: 35%;
+		margin-bottom: 2em;
 	}
 	.scroll-down{
 		margin-top: 2.5em;
 	}
 }
 
-@media screen and (max-width: 608px){
+/*Mobile devices*/
+
+@media screen and (max-width: 480px){
 	.intro{
 		text-align: center;
 		justify-content: center;
+		flex-wrap: wrap-reverse;
+	}
+
+	.intro img{
+		height: 50%;
+		width: 50%;
+
 	}
 
 }
