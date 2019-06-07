@@ -25,7 +25,7 @@ body{
 /* Part of the Top Navigation Bar*/
 
 nav{
-	margin-top: 2rem;
+	margin-top: 0.3rem;
 	display: flex;
 	justify-content: space-between;
 }
@@ -252,6 +252,49 @@ a{
 		height: 50%;
 		width: 50%;
 
+	}
+
+/* The new nav bar for mobile*/
+	nav{
+		display: block;
+		margin-top: 0;
+	}
+
+	#logo{
+		margin-top: 0;
+		margin-bottom: 0;
+		width: 50%;
+	}
+	.navigation{
+		margin-top: 0;
+		font-size: 1.1em;
+		margin: 0.5em auto 0.5em auto;
+	}
+
+	.menu-bar{
+		margin-top: 1em;
+		display: flex;
+		font-size: 1.3em;
+		font-weight: 300;
+
+	}
+
+	.burger-nav{
+		display: block;
+		height: 40px;
+		width: 50%;
+		background: url(menu-icon.png) no-repeat 98% center;
+		background-size: 50px 50px;
+
+	}
+
+	nav ul{
+		overflow: hidden;
+		height: 0;
+	}
+
+	nav ul.open{
+		height: 40px;
 	}
 
 }
