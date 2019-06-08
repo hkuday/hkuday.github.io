@@ -266,9 +266,17 @@ a{
 		width: 50%;
 	}
 	.navigation{
+		display: block;
 		margin-top: 0;
-		font-size: 1.1em;
+		font-size: 1.3em;
+		font-weight: 300;
 		margin: 0.5em auto 0.5em auto;
+		margin-left: 0;
+		text-align: right;
+	}
+
+	.navigation li{
+		margin-bottom: 0.2em;
 	}
 
 	.menu-bar{
@@ -294,7 +302,7 @@ a{
 	}
 
 	nav ul.open{
-		height: 40px;
+		height: auto;
 	}
 
 }
